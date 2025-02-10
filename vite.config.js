@@ -6,7 +6,7 @@ export default defineConfig({
     base: "/mypages/",
     plugins: [react()],
      build: {
-        outDir: "../docs",
+        outDir: "docs",
         emptyOutDir: true,
         rollupOptions: {
             input: {
