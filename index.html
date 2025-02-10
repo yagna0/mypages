@@ -6,14 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+    Welcome Back
     <nav>
         <a href="./about/">About page</a>
         <a href="./about2/">About 2 page</a>
     </nav>
-    <h1>Hello ,Mom</h1>
-    <script src="lodash.js"></script>
-    <script>
-        alert(globalThis._.join(["Hello", "Mom"], " ,"));
+</body>
+    <script type="module">
+        import _ from "lodash";
+        alert(_.join(["Hello","rollup"], " "));
     </script>
 </body>
 </html>
