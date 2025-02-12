@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>finalproject2</title>
+    
 </head>
 <body>
-    Hello about again
-    </body>
-    </html>
+    <h1>Please Enter your name</h1>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+
+    
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        let name = document.getElementById("name").value;
+        if (name.trim() === "") {
+            document.getElementById("formMessage").textContent = "Please enter your name.";
+        } else {
+            document.getElementById("formMessage").textContent = `Thank you !! Nice to meet you, ${name}!`;
+        }
+    });
+</script>
+
+  
+    
+</body>
+</html>

@@ -3,8 +3,9 @@ import { resolve } from "path";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-    base: "/mypages/",
     plugins: [react()],
+    base: "/mypages/",
+    //root: "about2",
      build: {
         outDir: "docs",
         emptyOutDir: true,
