@@ -4,10 +4,9 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
     plugins: [react()],
-    base: "/mypages/",
-    //root: "about2",
-     build: {
-        outDir: "docs",
+    base: "/mypages/", // Ensure the base URL is correct
+    build: {
+        outDir: "docs",  // Directory for GitHub Pages (or your hosting directory)
         emptyOutDir: true,
         rollupOptions: {
             input: {
@@ -16,5 +15,8 @@ export default defineConfig({
                 about2: resolve(__dirname, "about2/index.html"),
             },
         },
+    },
+    server: {
+        historyApiFallback: true, // Ensures React Router handles the routing in production
     },
 });

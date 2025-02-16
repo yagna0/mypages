@@ -1,3 +1,4 @@
+
 {
   "name": "mypages-site",
   "private": true,
@@ -12,9 +13,14 @@
     "vite": "^6.1.0"
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.6.1",
     "@vitejs/plugin-react": "^4.3.4",
     "lodash": "^4.17.21",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.1.5",
+    "web-vitals": "^4.2.4"
   }
 }

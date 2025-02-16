@@ -1,5 +1,16 @@
-import { createRoot } from "react-dom/client";
-//import Burger from "../areact-component/Burger";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ReactComponent from './react';  // Assuming this is your main React component
+import NewPage from './newpage';      // Assuming this is your new page component
 
-const root = createRoot(document.querySelector("root"));
-root.render(<h1>"Hello from react"</h1>)
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<ReactComponent />} />
+        <Route path="/newpage.jsx" element={<NewPage />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
