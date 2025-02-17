@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/mypages/static/js/main.cdf5081d.js",
+    "index.html": "/mypages/index.html",
+    "main.cdf5081d.js.map": "/mypages/static/js/main.cdf5081d.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.cdf5081d.js"
+  ]
+}
