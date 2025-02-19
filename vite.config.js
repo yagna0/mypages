@@ -14,7 +14,7 @@ export default defineConfig({
         about: resolve(__dirname, "about/index.html"),
         about2: resolve(__dirname, "about2/index.html"),
         reactABC123: resolve(__dirname, "react-app/index.html"),
-        reactABC123: resolve(__dirname, "react-app/index.jsx"),
+        reactABC12: resolve(__dirname, "react-app/index.jsx"),
         reactcomp: resolve(__dirname, "react-components/itemList.jsx"),
 
       },
