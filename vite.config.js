@@ -1,26 +1,31 @@
-import { defineConfig } from "vite";
-import { resolve } from "path";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: "/mypages/", // Ensure the base URL is correct
+  base: '/mypages/', // Keep this for GitHub Pages
+  root: resolve(__dirname, 'src'), // Ensure Vite picks files from "src"
   build: {
-    outDir: "docs", // Directory for GitHub Pages (or your hosting directory)
+    outDir: '../docs', // Build files into "docs/" for GitHub Pages
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"),
-        about: resolve(__dirname, "about/index.html"),
-        about2: resolve(__dirname, "about2/index.html"),
-        reactABC123: resolve(__dirname, "react-app/index.html"),
-        reactABC12: resolve(__dirname, "react-app/index.jsx"),
-        reactcomp: resolve(__dirname, "react-components/itemList.jsx"),
-
+        main: resolve(__dirname, 'src/index.html'),
+        about: resolve(__dirname, 'src/about/index.html'),
+        about2: resolve(__dirname, 'src/about2/index.html'),
+        reactApp: resolve(__dirname, 'src/react-app/index.html'),
+        todo: resolve(__dirname, 'src/to-do/index.html'),
       },
     },
   },
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
+  },
   server: {
-    historyApiFallback: true, // Ensures React Router handles the routing in production
+    port: 3000,
+    open: true,
   },
 });
