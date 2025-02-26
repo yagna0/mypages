@@ -1,8 +1,0 @@
-import{r as u,R as _}from"./index.3c53e1e5.js";var a={exports:{}},t={};/** @license React v17.0.2
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */var y=u.exports,l=60103;t.Fragment=60107;if(typeof Symbol=="function"&&Symbol.for){var p=Symbol.for;l=p("react.element"),t.Fragment=p("react.fragment")}var h=y.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,v=Object.prototype.hasOwnProperty,x={key:!0,ref:!0,__self:!0,__source:!0};function f(n,r,i){var e,o={},s=null,c=null;i!==void 0&&(s=""+i),r.key!==void 0&&(s=""+r.key),r.ref!==void 0&&(c=r.ref);for(e in r)v.call(r,e)&&!x.hasOwnProperty(e)&&(o[e]=r[e]);if(n&&n.defaultProps)for(e in r=n.defaultProps,r)o[e]===void 0&&(o[e]=r[e]);return{$$typeof:l,type:n,key:s,ref:c,props:o,_owner:h.current}}t.jsx=f;t.jsxs=f;a.exports=t;const d=a.exports.jsx,m=a.exports.jsxs,R=()=>{const[n,r]=_.useState([{id:1,name:"parents",description:"gurdian of kids"},{id:2,name:"food",description:"healthy food"},{id:3,name:"snow",description:"means no sun"},{id:4,name:"sun",description:"summer time"},{id:5,name:"vacation",description:"coming"},{id:6,name:"movie",description:"fun with popcorn"},{id:7,name:"work",description:"hard"}]);return m("div",{children:[d("button",{onClick:()=>{r(n.map(e=>({...e,description:"Updated description!"})))},children:"Update Descriptions"}),d("ul",{children:n.map(e=>m("li",{children:[e.name,": ",e.description]},e.id))})]})},g=createRoot(document.getElementById("react-root-main"));g.render(d(R,{}));
