@@ -17,6 +17,7 @@ export default defineConfig({
         reactapp: resolve(__dirname, 'src/react-app/index.html'),
         todo: resolve(__dirname, 'src/to-do/index.html'),
         demo: resolve(__dirname, 'src/demos/simple-fetch.html'),
+        localfetch: resolve(__dirname, 'src/local-fetch/index.html'),
       },
     },
   },
