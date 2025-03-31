@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+ 
   base: '/mypages/', 
   root: 'src', 
   build: {
@@ -18,7 +19,9 @@ export default defineConfig({
         todo: resolve(__dirname, 'src/to-do/index.html'),
         demo: resolve(__dirname, 'src/demos/simple-fetch.html'),
         localfetch: resolve(__dirname, 'src/local-fetch/index.html'),
+        tetris: resolve(__dirname, 'src/tetris/index.html'),
       },
+      extensions: ['.js', '.jsx'], 
     },
   },
   css: {
