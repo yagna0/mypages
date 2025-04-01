@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import TetriesGame from "../tetris/tetriesgame.jsx"; // ✅ Ensure correct path
-import App from "./App";
+import App from "./tetrisapp.jsx"; // ✅ Correct path
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <TetriesGame />  {/* ✅ Render the Tetris Game */}
+    <App />
   </React.StrictMode>
 );

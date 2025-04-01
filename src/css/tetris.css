@@ -1,0 +1,67 @@
+/* General styling */
+body {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 0.5), rgba(255, 165, 0, 0.5), 
+                rgba(255, 255, 0, 0.5), rgba(0, 255, 0, 0.5), rgba(0, 255, 255, 0.5), 
+                rgba(0, 0, 255, 0.5), rgba(128, 0, 128, 0.5));
+    background-size: 400% 400%;
+    animation: rainbow 15s infinite linear;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animate rainbow background */
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Game container with slight dark transparency */
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Darker background to reduce brightness */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Board styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    gap: 2px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent board */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual cells */
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Tetromino colors (with more contrast) */
+.cell.red { background-color: rgba(255, 0, 0, 0.8); }
+.cell.blue { background-color: rgba(0, 0, 255, 0.8); }
+.cell.green { background-color: rgba(0, 255, 0, 0.8); }
+.cell.yellow { background-color: rgba(255, 255, 0, 0.8); }
+.cell.purple { background-color: rgba(128, 0, 128, 0.8); }
+.cell.cyan { background-color: rgba(0, 255, 255, 0.8); }
+.cell.orange { background-color: rgba(255, 165, 0, 0.8); }
+
+/* Game title */
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

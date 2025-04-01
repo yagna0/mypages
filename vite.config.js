@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
- 
+  
   base: '/mypages/', 
   root: 'src', 
   build: {
@@ -21,24 +21,25 @@ export default defineConfig({
         localfetch: resolve(__dirname, 'src/local-fetch/index.html'),
         tetris: resolve(__dirname, 'src/tetris/index.html'),
       },
-      extensions: ['.js', '.jsx'], 
     },
   },
+  
   css: {
     preprocessorOptions: {
       scss: {
         additionalData: `@import "src/styles/sitewide.scss";`, 
       },
     },
+  },
 
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
     },
   },
+
   server: {
     port: 3000,
     open: true,
   },
-}
 });

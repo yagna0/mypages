@@ -1,13 +1,12 @@
-import React from 'react';
-import TetrisMain from '@/js/tetrismain.jsx'; // Using alias from vite.config.js
+import React from "react";
+import TetrisGame from "./tetriesgame.jsx"; // ✅ Ensure correct path
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <h1>Tetris Game</h1>
-      <TetrisMain />
+    <div className="App">
+      <TetrisGame />
     </div>
   );
-};
+}
 
 export default App;
