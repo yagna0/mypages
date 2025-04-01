@@ -1,5 +1,5 @@
 import React from "react";
-import TetrisGame from "./tetriesgame.jsx"; // ✅ Ensure correct path
+import TetrisGame from "./tetriesgame.jsx"; // 
 
 function App() {
   return (

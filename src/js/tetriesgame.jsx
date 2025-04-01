@@ -4,9 +4,9 @@ import "../css/tetris.css";
 const COLS = 10;
 const ROWS = 20;
 const TETROMINOS = [
-  { shape: [[1, 1, 1], [0, 1, 0]], color: "red" }, // T-Shape
-  { shape: [[1, 1], [1, 1]], color: "blue" }, // O-Shape
-  { shape: [[1, 1, 1, 1]], color: "green" }, // I-Shape
+  { shape: [[1, 1, 1], [0, 1, 0]], color: "red" }, 
+  { shape: [[1, 1], [1, 1]], color: "blue" }, 
+  { shape: [[1, 1, 1, 1]], color: "green" }, 
 ];
 
 const createEmptyBoard = () => Array.from({ length: ROWS }, () => Array(COLS).fill(null));
